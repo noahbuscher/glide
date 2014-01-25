@@ -9,3 +9,5 @@ Tested with:
   * Firefox [broken]
 
 If you're viewing on an OS X machine, Glide disables itself as Macs have a built-in smooth scroll feature, so using Glide would be redundant.
+
+Glide is mainly for testing purposes, and can become unstable.
