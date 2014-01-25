@@ -5,11 +5,13 @@ var old = 0;
 
 $('body,html').bind('scroll mousedown wheel DOMMouseScroll mousewheel keyup', function(e){
     if ( e.which > 0 || e.type == "mousedown" || e.type == "mousewheel") {
-
-        if ($(window).scrollTop() === 0 || $(window).scrollTop() + window.innerHeight == $(document).height()) {
-            power = 15;
-        } else {
-            power += 15;
+        var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
+        if (isMac === false) {
+            if ($(window).scrollTop() === 0 || $(window).scrollTop() + window.innerHeight == $(document).height()) {
+                power = 15;
+            } else {
+                power += 15;
+            }
         }
     }
 });
